@@ -1,0 +1,38 @@
+{
+  "name": "quark",
+  "displayName": "Quark",
+  "description": "Syntax Highlighting for Quark language",
+  "main": "./extension.js",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.125.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "activationEvents": [
+		"onLanguage:quark"
+	],
+  "contributes": {
+    "languages": [
+      {
+        "id": "quark-lang",
+        "aliases": [
+          "Quark",
+          "quark"
+        ],
+        "extensions": [
+          ".qk"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "quark-lang",
+        "scopeName": "source.quark",
+        "path": "./syntaxes/quark-lang.tmLanguage.json"
+      }
+    ]
+  }
+}
