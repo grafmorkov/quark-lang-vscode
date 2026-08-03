@@ -1,7 +1,7 @@
-# Quark
+# Quark Lang VsCode Extension
+Currently, it's just a syntax highlighting
 
-Some extension idk
+## Quark Compiler
 
-## Features
-- Syntax Highlighting
-- Auto Completion
+The Quark compiler is available at:
+https://github.com/grafmorkov/quark
