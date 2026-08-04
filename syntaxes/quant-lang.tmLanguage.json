@@ -1,7 +1,7 @@
 {
 	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
-	"name": "Quark",
-	"scopeName": "source.quark",
+	"name": "Quant",
+	"scopeName": "source.quant",
 	"patterns": [
 		{
 			"include": "#comments"
@@ -43,11 +43,11 @@
 				{
 					"begin": "/\\*",
 					"end": "\\*/",
-					"name": "comment.block.quark"
+					"name": "comment.block.quant"
 				},
 				{
 					"match": "//.*$",
-					"name": "comment.line.double-slash.quark"
+					"name": "comment.line.double-slash.quant"
 				}
 			]
 		},
@@ -56,11 +56,11 @@
 				{
 					"begin": "\"",
 					"end": "\"",
-					"name": "string.quoted.double.quark",
+					"name": "string.quoted.double.quant",
 					"patterns": [
 						{
 							"match": "\\\\[ntr0\"'\\\\]",
-							"name": "constant.character.escape.quark"
+							"name": "constant.character.escape.quant"
 						}
 					]
 				}
@@ -71,7 +71,7 @@
 				{
 					"begin": "'",
 					"end": "'",
-					"name": "string.quoted.single.quark"
+					"name": "string.quoted.single.quant"
 				}
 			]
 		},
@@ -79,7 +79,7 @@
 			"patterns": [
 				{
 					"match": "\\b\\d+(\\.\\d+)?([eE][+-]?\\d+)?\\b",
-					"name": "constant.numeric.quark"
+					"name": "constant.numeric.quant"
 				}
 			]
 		},
@@ -87,7 +87,7 @@
 			"patterns": [
 				{
 					"match": "\\b(func|extern|struct|enum|if|else|while|return|load|using|region|mut|as|as!|sizeof|alloc)\\b",
-					"name": "keyword.control.quark"
+					"name": "keyword.control.quant"
 				}
 			]
 		},
@@ -95,11 +95,11 @@
 			"patterns": [
 				{
 					"match": "\\b(void|bool|char|i8|i16|i32|i64|u8|u16|u32|u64|f32|f64|str)\\b",
-					"name": "storage.type.quark"
+					"name": "storage.type.quant"
 				},
 				{
 					"match": "[*&][A-Za-z_][A-Za-z0-9_]*",
-					"name": "storage.type.pointer.quark"
+					"name": "storage.type.pointer.quant"
 				}
 			]
 		},
@@ -117,13 +117,13 @@
 					"match": "\\bfunc\\s+([A-Za-z_][A-Za-z0-9_]*)",
 					"captures": {
 						"1": {
-							"name": "entity.name.function.quark"
+							"name": "entity.name.function.quant"
 						}
 					}
 				},
 				{
 					"match": "\\b([A-Za-z_][A-Za-z0-9_]*)\\s*(?=\\()",
-					"name": "support.function.quark"
+					"name": "support.function.quant"
 				}
 			]
 		},
@@ -131,7 +131,7 @@
 			"patterns": [
 				{
 					"match": "\\b[A-Za-z_][A-Za-z0-9_]*(::[A-Za-z_][A-Za-z0-9_]*)+",
-					"name": "entity.name.namespace.quark"
+					"name": "entity.name.namespace.quant"
 				}
 			]
 		},
@@ -139,7 +139,7 @@
 			"patterns": [
 				{
 					"match": "(\\+=|-=|\\*=|/=|&=|\\|=|==|!=|<=|>=|&&|\\|\\||as!|as|[+\\-*/=<>&|])",
-					"name": "keyword.operator.quark"
+					"name": "keyword.operator.quant"
 				}
 			]
 		},
@@ -147,7 +147,7 @@
 			"patterns": [
 				{
 					"match": "\\b(true|false|null)\\b",
-					"name": "constant.language.quark"
+					"name": "constant.language.quant"
 				}
 			]
 		}

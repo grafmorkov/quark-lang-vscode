@@ -1,17 +1,17 @@
 {
-  "name": "quark",
-  "displayName": "Quark Language",
+  "name": "quant",
+  "displayName": "Quant Language",
   "publisher": "grafmorkov",
-  "description": "Language support for the Quark programming language.",
+  "description": "Language support for the Quant programming language.",
   "version": "0.0.1",
   "license": "GPL-3.0",
   "repository": {
     "type": "git",
-    "url": "https://github.com/grafmorkov/quark-lang-vscode"
+    "url": "https://github.com/quant-lang/vscode-extension"
   },
-  "homepage": "https://github.com/grafmorkov/quark-lang-vscode",
+  "homepage": "https://github.com/quant-lang",
   "bugs": {
-    "url": "https://github.com/grafmorkov/quark-lang-vscode/issues"
+    "url": "https://github.com/quant-lang/quant/issues"
   },
   "engines": {
     "vscode": "^1.125.0"
@@ -20,34 +20,34 @@
     "Programming Languages"
   ],
   "keywords": [
-    "quark",
+    "quant",
     "language",
     "compiler",
     "syntax",
     "highlighting"
   ],
   "activationEvents": [
-    "onLanguage:quark"
+    "onLanguage:quant"
   ],
   "contributes": {
     "languages": [
       {
-        "id": "quark-lang",
+        "id": "quant-lang",
         "aliases": [
-          "Quark",
-          "quark"
+          "Quant",
+          "quant"
         ],
         "extensions": [
-          ".qk"
+          ".qu"
         ],
         "configuration": "./language-configuration.json"
       }
     ],
     "grammars": [
       {
-        "language": "quark-lang",
-        "scopeName": "source.quark",
-        "path": "./syntaxes/quark-lang.tmLanguage.json"
+        "language": "quant-lang",
+        "scopeName": "source.quant",
+        "path": "./syntaxes/quant-lang.tmLanguage.json"
       }
     ]
   }

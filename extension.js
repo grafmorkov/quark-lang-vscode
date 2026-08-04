@@ -1,7 +1,7 @@
 const vscode = require("vscode");
 
 const provider = vscode.languages.registerCompletionItemProvider(
-    "quark-lang",
+    "quant-lang",
     {
         provideCompletionItems(document, position) {
 
