@@ -1,4 +1,4 @@
-# Quant Lang VsCode Extension
+# Quant Lang VSCode Extension
 Currently, it's just a syntax highlighting
 
 ## Quant Compiler
