@@ -21,7 +21,6 @@ const provider = vscode.languages.registerCompletionItemProvider(
             });
 
 
-            // Если перед курсором есть @, показываем только атрибуты
             if (text.endsWith("@")) {
                 return attributes;
             }
@@ -68,7 +67,12 @@ const provider = vscode.languages.registerCompletionItemProvider(
                 "else",
                 "while",
                 "using",
-                "load"
+                "load",
+                "break",
+                "continue",
+                "switch",
+                "case",
+                "default"
             ];
 
 
